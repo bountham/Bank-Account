@@ -15,3 +15,13 @@ describe("BankAccount", function(){
         });
     });
 });
+
+  describe("Person", function(){
+        describe("get_name", function(){
+            it("add a new account holder to the bank", function(){
+                var addAccountHolder = Object.create(Person);
+                var result = addAccountHolder.get_name();
+                expect(result).to.equal("tommy");
+            });
+        });
+  });
