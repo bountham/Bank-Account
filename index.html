@@ -9,19 +9,52 @@
 <body>
     <div class="container">
         <h3>Create a Bank Account</h3>
-          <form id="create-bank">
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" class="form-control">
-              </div>
+        <div class="row">
+          <div class="col-md-6">
+              <form id="create-bank">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" id="name" class="form-control">
+                  </div>
 
-              <div class="form-group">
-                  <label for="initial-deposit">Initial deposit</label>
-                  <input type="text" name="initial-deposit"id="initial-deposit" class="form-control">
-              </div>
-              <button class="btn btn-success" name="button" type ="submit">Create bank account</button>
+                  <div class="form-group">
+                      <label for="initial-deposit">Initial deposit</label>
+                      <input type="text" name="initial-deposit"id="initial-deposit" class="form-control">
+                  </div>
+                  <button class="btn btn-success" name="button" type ="submit">Create bank account</button>
+              </form>
+          </div>
+          <div class="col-md-6">
+            <form id="money-dep-with">
+                <div class="form-group">
+                    <label for="deposit-amount">Deposit amount:</label>
+                    <input type="text" name="deposit-amount" id="deposit-amount" required class="form-control" placeholder="$10.00">
+                </div>
 
-          </form>
-    </div>
+                <div class="form-group">
+                    <label for="withdraw-amount">Withdraw amount:</label>
+                    <input type="text" name="withdraw-amount"   id="withdraw-amount" required class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+          <div class ="col-md-4"></div>
+          <div class ="col-md-4">
+              <table class="table table-striped">
+                  <tr>
+                      <th>Your bank account's balance</th>
+                  </tr>
+                <tr>
+                    <td id="balance">
+                        <p>$1.00</p>
+                    </td>
+                </tr>
+              </table>
+          </div>
+          <div class= "col-md-4"></div>
+      </div>
 </body>
 </html>
